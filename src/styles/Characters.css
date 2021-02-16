@@ -1,0 +1,23 @@
+.Characters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 20px;
+}
+
+.Card {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: 3px solid #FF8A00;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}

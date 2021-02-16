@@ -2,7 +2,7 @@
 const Header = () => {
     return (
         <div className='Header'>
-            <h1>ReactHooks</h1>  
+            <h1>React Hooks</h1>  
         </div>
     );
 }

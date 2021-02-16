@@ -13,14 +13,16 @@ function App() {
   return (
     <div className="App" 
       style={{
-        background: darkMode ? '#0b1935' : '#FFF',
+        background: darkMode ? '#0B1935' : '#FFF',
         color: darkMode ? '#FFF' : '#000'
       }}>
       <Header />
-      <h1>Hola Mundo</h1>
       <button 
         type="button" 
         onClick={handleClick}
+        style={{
+          color: darkMode ? '#FFF' : '#000'
+        }}
       >
       {darkMode ? 'Dark Mode' : 'Light Mode'}
       </button>
