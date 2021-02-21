@@ -1,23 +1,25 @@
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import Header from './components/Header';
 import Characters from './components/Characters';
+import ThemeContext, {themes} from './context/ThemeContext';
 import './App.css';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const handleClick = () => {
-    setDarkMode(!darkMode);
-  }
+  const theme = useState(ThemeContext);
 
   return (
     <div className="App" 
-      style={{
-        background: darkMode ? '#0B1935' : '#FFF',
-        color: darkMode ? '#FFF' : '#000'
-      }}>
+      // style={{
+      //   background: darkMode ? '#0B1935' : '#FFF',
+      //   color: darkMode ? '#FFF' : '#000'
+      // }}
+      style={{ 
+        background: theme.background,
+        color: theme.color
+    }}
+      >
       <Header />
-      <button 
+      {/* <button 
         type="button" 
         onClick={handleClick}
         style={{
@@ -25,7 +27,7 @@ function App() {
         }}
       >
       {darkMode ? 'Dark Mode' : 'Light Mode'}
-      </button>
+      </button> */}
       <Characters />
     </div>
   );

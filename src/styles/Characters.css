@@ -1,6 +1,7 @@
 .Characters {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
     grid-gap: 1rem;
     margin: 20px;
 }
@@ -20,4 +21,9 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+.Card img {
+    width: 100%;
+    object-fit: cover;
 }
