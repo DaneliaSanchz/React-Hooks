@@ -11,6 +11,6 @@ export const themes = {
     },
   };
 
-const ThemeContext = React.createContext(themes.light);
+const ThemeContext = React.createContext();
 
 export default ThemeContext;

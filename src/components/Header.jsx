@@ -1,10 +1,9 @@
 import { useState, useContext } from 'react';
-import ThemeContext, {themes} from '../context/ThemeContext';
+import ThemeContext from '../context/ThemeContext';
 
 const Header = () => {
+    // const theme = useContext(ThemeContext);
     const [darkMode, setDarkMode] = useState(false);
-    const theme = useContext(ThemeContext);
-    
     const handleClick = () => {
         setDarkMode(!darkMode);
     }

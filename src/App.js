@@ -5,18 +5,18 @@ import ThemeContext, {themes} from './context/ThemeContext';
 import './App.css';
 
 function App() {
-  const theme = useState(ThemeContext);
+  const theme = useContext(ThemeContext);
 
   return (
     <div className="App" 
       // style={{
-      //   background: darkMode ? '#0B1935' : '#FFF',
-      //   color: darkMode ? '#FFF' : '#000'
+      //   background: theme ? '#0B1935' : '#FFF',
+      //   color: theme ? '#FFF' : '#000'
       // }}
-      style={{ 
+      style={{
         background: theme.background,
         color: theme.color
-    }}
+      }}
       >
       <Header />
       {/* <button 
